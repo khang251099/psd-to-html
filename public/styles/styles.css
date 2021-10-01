@@ -1482,14 +1482,24 @@ button.slick-next.pull-right.slick-arrow {
     padding-left: 3rem !important; } }
 
 @media screen and (max-width: 414px) {
+  .quote-desc {
+    font-size: 2rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 2rem !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 3 !important;
+    -webkit-box-orient: vertical;
+    overflow: hidden; }
   .quote-container {
     padding: 2.5rem 0 !important; }
   .quote-item {
     padding-left: 2.5rem !important;
     padding-right: 2.5rem !important; }
   .quote-icon {
-    width: 100px !important;
-    height: 100px  !important; }
+    width: 90px !important;
+    height: 90px  !important; }
+    .quote-icon img {
+      width: 70%; }
   .quote-author::before {
     width: 5rem !important; } }
 

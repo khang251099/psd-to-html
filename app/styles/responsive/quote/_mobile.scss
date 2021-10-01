@@ -45,6 +45,13 @@
     }
 }
 @include maxWidth(414px) {
+    .quote-desc{
+        font-size:2rem !important;
+        line-height:1.4 !important;
+        margin-bottom:2rem !important;
+        @include textOverflow(3 !important);
+    }
+  
     .quote-container{
         padding:2.5rem 0 !important;
     }
@@ -53,8 +60,11 @@
        padding-right:2.5rem !important;
    }
    .quote-icon{
-       width:100px !important;
-       height:100px  !important;
+       width:90px !important;
+       height:90px  !important;
+       img{
+           width:70%;
+       }
    }
    .quote-author{
        &::before{
@@ -63,3 +73,6 @@
    }
 }
 
+@include maxWidth(414px){
+  
+}
