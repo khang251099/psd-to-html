@@ -1373,6 +1373,12 @@ button.slick-next.pull-right.slick-arrow {
       -webkit-box-orient: vertical;
       overflow: hidden; } }
 
+@media screen and (max-width: 414px) {
+  .service-item-title {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    display: block; } }
+
 @media screen and (max-width: 375px) {
   .device-wrapper {
     margin-top: 4rem !important; }

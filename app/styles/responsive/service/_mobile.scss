@@ -44,3 +44,9 @@
         }
     }
 }
+@include maxWidth(414px){
+    .service-item-title{
+      flex-wrap:nowrap;
+      display:block;
+    }
+}
