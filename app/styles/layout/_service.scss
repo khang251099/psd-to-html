@@ -1,0 +1,44 @@
+.service-wrapper{
+    .service-list{
+        margin-top:3rem;
+        .service-item-flex{
+            // display:grid;
+            // grid-template-columns: repeat(3,1fr) !important;
+            display:flex;
+            align-items:stretch;
+            justify-content: space-between;
+            margin-top:6.5rem;
+            // margin-left:-4rem;
+            &:first-of-type{
+            border-bottom:1px solid #cccc;
+            padding-bottom:5rem;
+            margin-bottom:5rem;
+            }
+            .service-item{  
+                //width:calc(33.33%-4rem);
+                width:calc(33.33% - 2.7rem);
+                //2.7=80/3 (80=Độ rộng khoảng cách 40*2)
+                // margin-left:4rem;
+                display:flex;
+                align-items:flex-start;
+                &-title{
+                    font-size:1.5rem;
+                    padding-bottom:2.5rem;
+                    text-transform: uppercase;
+                    font-weight:bold;
+                }
+                &-desc{
+                    color:$text-color;
+                    font-family: $secondary-font;
+                    line-height:1.6
+                }
+                &-icon{
+                    font-size:3.4rem;
+                    color:$third-color;
+                    margin:0 3rem;
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,49 @@
+.wrapper {
+    max-width: $wrapper;
+    margin: 0 auto;
+}
+.container {
+    max-width: $container + 15px+15px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.text{
+    color:$text-color;
+    font-style:italic;
+    font-family: $secondary-font;
+}
+.block-header {
+    padding-top: 9rem;
+    text-align: center;
+    &-caption {
+        font-family: $third-font;
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+    }
+    &-title {
+        font-family: $primary-font;
+        font-size: 3rem;
+        font-weight: bold;
+        position: relative;
+        padding-bottom: 3.5rem;
+        margin-bottom: 3.5rem;
+        text-transform: uppercase;
+        &::after {
+            content: "";
+            width: 6rem;
+            height: 0.5rem;
+            background-color: $primary-color;
+            @include absoluteCenter("left");
+            bottom: 0;
+        }
+    }
+    &-desc {
+        color: $text-color;
+        max-width: 960px;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        font-family: $secondary-font;
+        line-height: 1.4;
+        margin-bottom: 10rem;
+    }
+}

@@ -1,0 +1,15 @@
+@include maxWidth(768px){
+    .work-list{
+        display:block !important;
+    }
+}
+@include maxWidth(414px){
+    .work-list{
+        display:block !important;
+    } 
+    img.work-image {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+//max-width=min-width-1

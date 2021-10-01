@@ -1,0 +1,29 @@
+// @include maxWidth(414px){
+//     .footer-top{
+//         display:block !important;
+//         .footer-column{
+//                 width:100% !important;
+//                 margin-bottom:2rem !important;
+//         }
+//     }
+//     .footer-desc{
+//         @include textOverflow(4 !important);
+//     }
+// }
+
+@include maxWidth(768px){
+    .footer-top{
+        display:block !important;
+        .footer-column{
+            &:not(:nth-child(99)){
+                width:100% !important;
+                
+            }
+            margin-bottom:2rem !important;
+        }
+    }
+    .footer-desc{
+        @include textOverflow(4 !important);
+    }
+   
+}

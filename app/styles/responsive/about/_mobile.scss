@@ -1,0 +1,74 @@
+
+@include maxWidth(375px){
+    .block-header-desc{
+        margin-bottom:5rem;
+      @include textOverflow(3)
+    }
+    .about-list{
+        padding-top:2rem !important;
+        .about-list-img{
+            margin-top:-2rem !important;
+            // grid-auto-columns: 80%;
+            // grid-auto-flow:column;
+            // grid-template-columns: unset;
+            // grid-row-gap:2.5rem;
+            // overflow-x: auto;
+            // @include hideScroll();
+            // //scroll-snap-type:áp dụng cho th cha
+            // scroll-snap-type:x mandatory;
+            // scroll-snap-stop: always;
+            // padding:1rem;
+            .about{
+                &-item{
+                    //scroll-snap-align: dùng cho th con
+                    scroll-snap-align:center;
+                    .about-content{
+                        i.about-icon{
+                            font-size:1rem;
+                        }
+                        span.about-title{
+                            font-size:1rem;
+                        }
+                    }
+                }
+               
+               
+            }
+        }
+    }
+    
+}
+
+@include maxWidth(414px){
+.about-wrapper{
+    .about-list{
+        padding-top:2rem;
+        .block-header{
+            &-desc{
+                @include textOverflow(2);
+            }
+        }
+        .about-list-img{
+            margin-top:-9rem;
+            grid-auto-columns: 80%;
+            grid-auto-flow:column;
+            grid-template-columns: unset;
+            grid-row-gap:2.5rem;
+            overflow-x: auto;
+            @include hideScroll();
+            //scroll-snap-type:áp dụng cho th cha
+            scroll-snap-type:x mandatory;
+            scroll-snap-stop: always;
+            padding:1rem;
+            .about{
+                &-item{
+                    //scroll-snap-align: dùng cho th con
+                    scroll-snap-align:center;
+                }
+            }
+
+
+        }
+    }
+}
+}

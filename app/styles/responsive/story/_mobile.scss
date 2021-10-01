@@ -1,0 +1,53 @@
+@include maxWidth(375px) {
+    .story-container {
+        padding: 3.5rem 0 !important;
+        .story-item {
+            padding-left: 0.5rem !important;
+            padding-right: 0.5rem !important;
+            .story-icon {
+                width: 90px !important;
+                height: 90px !important;
+            }
+            .story-info {
+                padding-left: 2rem !important;
+                .story-desc {
+                    font-size: 1.5rem !important;
+                    @include textOverflow(2 !important);
+                }
+                .story-author {
+                    padding-left: 3rem !important;
+                    &:before {
+                        width: 3rem !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@include maxWidth(414px) {
+    .story-container {
+        padding: 3.5rem 0 !important;
+        .story-item {
+            padding-left: 0.5rem !important;
+            padding-right: 0.5rem !important;
+            .story-icon {
+                width: 80px !important;
+                height: 80px !important;
+            }
+            .story-info {
+                padding-left: 2rem !important;
+                .story-desc {
+                    font-size: 1.5rem !important;
+                    @include textOverflow(2 !important);
+                }
+                .story-author {
+                    font-size: 2rem !important;
+                    padding-left: 3rem !important;
+                    &:before {
+                        width: 3rem !important;
+                    }
+                }
+            }
+        }
+    }
+}

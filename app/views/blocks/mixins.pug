@@ -1,0 +1,83 @@
+
+mixin MenuLink(href,title)
+  li.header-menu-item
+     a.header-menu-link(href= href)= title
+
+mixin headerBottom(number,text)
+  span.header-bottom-number= number 
+        span.header-bottom-text= text
+
+mixin blockHeader(caption,title,desc)
+  .block-header
+    h3.block-header-caption= caption 
+    h2.block-header-title= title 
+    if desc
+      p.block-header-desc= desc
+mixin NumberItem(number,text)
+  .number-item 
+    h4.number-item-count= number
+    span.number-item-text= text
+
+mixin CarouselItem(icon)
+  i.fal.fa-angle-left.quote-arrow-left.quote-arrow
+      .quote-content
+        .quote-icon
+          img(src= icon)
+        .quote-info
+          p.quote-desc "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam commodi cumque quibusdam necessitatibus vel, perspiciatis eius recusandae iste corrupti, ipsa nulla quaerat esse rerum a. Corporis reiciendis maxime incidunt architecto!"
+          span.quote-author Jon Doe
+      i.fal.fa-angle-right.quote-arrow-right.quote-arrow 
+
+mixin teamSocial(facebook="#",twitter="#",pinterest="#",instagram="#")
+  ul.team-social
+    ul.team-social
+      li.team-social-item
+        a.team-social-link(href= facebook)
+          i.fab.fa-facebook-f.team-icon
+        li.team-social-item
+          a.team-social-link(href= twitter)
+            i.fab.fa-twitter.team-icon
+        li.team-social-item
+          a.team-social-link(href= pinterest)
+            i.fab.fa-pinterest.team-icon
+        li.team-social-item
+          a.team-social-link(href= instagram)
+            i.fab.fa-instagram.team-icon
+
+
+mixin teamItem(src="../images/img-team2.png",name,position)
+  .team-item 
+    .team-main 
+      img(src= src).team-image
+      .team-content 
+        +teamSocial("##")
+    .team-info
+      h3.team-name= name
+      span.team-position= position
+
+mixin workItem(src)
+  .work-item 
+    img(src= src).work-image
+    .work-content 
+      i.fa.fa-home.work-icon 
+      h3.work-title Creatively Designed
+      span.work-desc.text.text--light Lorem, ipsum dolor sit amet consectetur elit.
+
+
+
+mixin blogItem(src,number,text,count1,count2)
+  li.blog-item 
+    .blog-media
+      img(src= src).story-images
+      .blog-date
+        span.blog-date-number= number
+        span.bblog-date-text= text
+    h3.blog-title Lorem ipsum dolor sit amet elit.
+    p.blog-desc.text Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ab architecto facere ipsum! 
+    .blog-meta
+      .blog-meta-item 
+        i.fa.fa-eye.blog-meta-icon
+        span.blog-meta-text= count1
+      .blog-meta-item 
+        i.fa.fa-comment.blog-meta-icon
+        span.blog-meta-text= count2

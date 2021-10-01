@@ -1,0 +1,12 @@
+#brand{
+    .brand{
+  
+        &-wrapper{
+            background-color:$four-color;
+            padding:7rem;
+            .brand-container{
+
+            }
+        }
+    }
+}

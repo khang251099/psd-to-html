@@ -1,0 +1,18 @@
+.device{
+    .device-wrapper{
+        margin-top:11rem;
+        background: linear-gradient(to bottom, rgba(gray, 0.7), rgba(#cccc, 0.7)),
+        url("../images/img-device-bg.png") no-repeat center / cover;
+        .device-img{
+            margin:0 auto -9.3rem;
+            display: inline-block;
+            transform:translateX(9.3rem)
+        }
+        .block-header{
+            padding-bottom:0;
+        }
+        .device-media{
+            text-align:center;
+        }
+    }
+}

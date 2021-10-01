@@ -1,0 +1,11 @@
+@include maxWidth(1024px){
+    .wedo-list{
+        .block-header{
+                padding-top:2rem !important;
+                &-desc{
+                    margin-bottom:1rem;
+                }
+        }
+    }
+    
+}

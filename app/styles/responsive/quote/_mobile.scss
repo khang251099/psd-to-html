@@ -1,0 +1,65 @@
+@include maxWidth(320px){
+    .brand-wrapper{
+        padding:1rem !important;
+    }
+    .quote-container{
+        padding:2.5rem 0 !important;
+        // display:none !important;
+    }
+   .quote-item{
+       padding-left:4.5rem !important;
+       padding-right:4.5rem !important;
+   }
+   .quote-icon{
+       width:70px !important;
+       height:70px  !important;
+       img{
+           width:50% !important;
+       }
+   }
+   .quote-info{
+       margin-left:1rem !important;
+   }
+   .quote-desc{
+       margin-bottom:0.5rem !important;
+       line-height:1.4 !important;
+       font-size:2rem !important;
+   }
+   .quote-author{
+       font-size:1.5rem !important;
+   }
+}
+
+
+@include maxWidth(375px) {
+    .quote-item{
+        padding-left:0rem !important;
+        padding-right:0rem !important;
+        .quote-icon{
+            width:80px !important;
+            height:80px !important;
+        }
+    }
+    .quote-info{
+        padding-left:3rem !important;
+    }
+}
+@include maxWidth(414px) {
+    .quote-container{
+        padding:2.5rem 0 !important;
+    }
+   .quote-item{
+       padding-left:2.5rem !important;
+       padding-right:2.5rem !important;
+   }
+   .quote-icon{
+       width:100px !important;
+       height:100px  !important;
+   }
+   .quote-author{
+       &::before{
+           width:5rem !important;
+       }
+   }
+}
+

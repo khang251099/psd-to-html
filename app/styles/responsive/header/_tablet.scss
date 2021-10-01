@@ -1,0 +1,37 @@
+
+
+@include maxWidth(1024px){
+  .header {
+    &-wrapper {
+      min-height: unset;
+      .header-list {
+        .header-top {
+          .header-toggle {
+            display: none;
+          }
+          .header-menu-list {
+            .header-menu-item {
+              &:not(first-child) {
+                margin-left: 5rem;
+              }
+            }
+          }
+        }
+        .header-content {
+          padding-top: 5rem;
+          .header-content-main {
+            .text-main{
+              font-size: 9rem;
+              // margin-top: 5rem;
+            }
+            
+          }
+        }
+        .header-bottom {
+          margin-top: 10rem;
+          padding-bottom: 2.5rem;
+        }
+      }
+    }
+  }
+}

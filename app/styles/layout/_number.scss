@@ -1,0 +1,28 @@
+.number{
+    &-wrapper{
+        background-color:$third-color;
+        .number-list{
+            display: flex;
+           justify-content: flex-start;
+           align-items: stretch; //bằng nhau
+            .number-item{
+                padding: 8.5rem 3.5rem;
+                color:#fff; 
+                border-left:1px solid #fff;
+                text-align:center;  
+                width:20%;
+                &:last-child{
+                    border-right:1px solid #fff;
+                }
+                &-count{    
+                    font-size:7.2rem;
+                    font-weight:bold;
+                    margin-bottom:2rem;
+                }
+                &-text{
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}   

@@ -1,0 +1,72 @@
+.team-container{
+        background-color: #fff;;
+        padding:10rem 0;
+        .team{
+            &-list{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-column-gap: 3rem;
+               .team{
+                   &-item{
+                       .team{
+                           &-main{
+                            img.team-image {
+                                object-fit: contain;
+                                width: 100%;
+                            }
+                               .team{
+                                   &-content{
+                                       .team{
+                                           &-social{
+                                               display:flex;
+                                               align-items:center;
+                                               &-item{
+                                                &:not(:first-child){
+                                                    border-left:1px solid $primary-color
+                                                }
+                                                   .team-social-link{
+                                                      display:flex;
+                                                      align-items:center;
+                                                      justify-content:center;
+                                                      width:6rem;
+                                                      height:6rem;
+                                                      color:$primary-color;
+                                                      font-size:2rem;
+                                                      background-color:$secondary-color;
+                                                      &:hover{
+                                                          color:#fff;
+                                                          background-color:$primary-color;
+                                                          transition:all 0.25s list;
+                                                      }
+                                                   }
+                                               }
+                                           }
+                                       }
+                                   }
+                               }
+                         
+                           }
+                           &-info{
+                            margin-top:3rem;
+                            text-align:center;
+                            .team-name{
+                                text-transform:uppercase;
+                                margin-bottom:1.5rem;
+                                color: $title-color;
+                                font-weight:500;
+                            }
+                            .team-position{
+                                font-size: 1.5rem;
+                                font-weight: 300;
+                                font-family: $secondary-font;
+                                font-style: italic;
+                                color:$text-color;
+                            }
+                           }
+                       }
+                   }
+               } 
+            }
+        }
+    }
+@include hoverEffect(".team-main",".team-content");

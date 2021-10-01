@@ -1,0 +1,29 @@
+@include maxWidth(375px){
+    .device-wrapper{
+        margin-top:4rem !important;
+}
+    .device-img{
+        width:90%;
+        margin:0 auto -4.3rem !important;
+        transform: translateX(3.3rem) !important;
+    }
+}   
+
+@include maxWidth(414px){
+    .device-wrapper{
+            margin-top:6rem !important;
+    }
+    .device-img {
+        width:80% !important;
+        margin: 0px auto -4.3rem !important;
+        display: inline-block;
+        
+        transform: translateX(3.3rem) !important;
+    }
+}
+
+@include maxWidth(768px){
+    .device-img{
+        transform: translateX(4.3rem) !important
+    }
+}

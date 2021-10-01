@@ -1,0 +1,89 @@
+#story{
+    .story{
+        &-wrapper{
+            background-color:#fff;
+
+            .story{
+                &-container{
+                    padding:6.5rem 0;
+                    display: flex;
+                    justify-content:space-between;
+                    align-items:center;
+                    .story{
+                        &-arrow{
+                            font-size:3rem;
+                            color: $pre-button;
+                            cursor:pointer;
+                            padding:1rem 2rem;
+                        }
+                        &-item{
+                            padding-left:5.5rem;
+                            padding-right:5.5rem;
+                            display:flex;
+                            align-items: center;
+                            .story{
+                                &-icon{
+                                   
+                                    display:flex;
+                                    align-items: center;
+                                    justify-content:center; 
+                                    //flex-shrink: co lại
+                                    //flex-row: giản ra
+                                    flex-shrink: 0;//không bị thu lại
+                                }
+                                &-info{
+                                    padding-left:6rem;
+                                    .story-desc{
+                                        font-size:2.5rem;
+                                        font-weight:300;
+                                        line-height:1.6;
+                                        font-family: $secondary-font;
+                                        margin-bottom:2.5rem;
+                                        font-style: italic;
+                                        color:$text-color;
+                                        @include textOverflow(3);
+                                    }
+                                    .story-author{
+                                        font-family: $third-font;
+                                        font-size:2.4rem; 
+                                        position:relative; 
+                                        padding-left:7rem; 
+                                        &:before{
+                                            content:"";
+                                            width:6rem;
+                                            height:0.4rem;
+                                             @include absoluteCenter('top');
+                                             left:0;
+                                          background-color:$primary-color;
+
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+button.slick-prev.pull-left.slick-arrow {
+    border: none;
+    background-color: transparent;
+   
+
+}
+i.fal.fa-angle-left {
+    font-size:24px;
+
+}
+i.fal.fa-angle-right {
+    font-size:24px;
+
+}
+
+button.slick-next.pull-right.slick-arrow {
+    border: none;
+    background-color: transparent;
+}

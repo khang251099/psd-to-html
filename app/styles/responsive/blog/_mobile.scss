@@ -1,0 +1,12 @@
+@include maxWidth(414px){
+
+    .blog-container{
+        padding-bottom:4rem !important;
+    }
+   .blog-list{
+       display:block !important;
+       .blog-item{
+           margin-bottom:2rem;
+       }
+   }
+}

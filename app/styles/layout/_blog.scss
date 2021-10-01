@@ -1,0 +1,72 @@
+#blog {
+  .blog-container {
+    padding-bottom: 12rem;
+    .blog{
+        &-list{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-column-gap: 3rem;
+            .blog-media{
+                position:relative;
+                .blog-date{
+                    color:#fff;
+                    background-color:$third-color;
+                    width:6rem;
+                    height:7rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    bottom: 10px;
+                    left: 0;
+                    transform: translateX(-10px);
+                    &-number{
+                        font-weight:bold;
+                        font-size:3rem;
+                        font-family: $secondary-font;
+                    }
+                }
+            }
+            .blog-title{
+               
+                font-family: $primary-font;
+                font-weight:500;
+                font-size:14px;
+                text-transform:uppercase;
+                margin-top:2.5rem;
+            }
+            .blog-desc{
+                font-style:normal;
+                margin-top:2rem;
+                line-height:1.4;
+                border-bottom: 1px solid #cccc;
+                padding-bottom:2rem;
+                .text{
+                  
+                }
+            }
+            .blog-meta{
+                display:flex;
+                align-items:center;
+                margin-top:2rem;
+                margin-left:-20px;
+                &-item{
+                    margin-left:20px;
+                    .blog-meta-icon{
+                        color:$third-color;
+                        font-size:20px;
+                    }
+                    .blog-meta-text{
+                        padding-left:8px;
+                        color:$text-color;
+                        
+                    }
+                }
+            }
+           
+        }
+    }
+  }
+}
+

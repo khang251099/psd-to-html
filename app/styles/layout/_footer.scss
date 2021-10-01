@@ -1,0 +1,159 @@
+.footer {
+    &-wrapper {
+        background-color: #f8f8f8;
+        .footer {
+            &-container {
+                .footer {
+                    &-list {
+                        .footer {
+                            &-top {
+                                padding: 7.5rem 0 7rem;
+                                display: flex;
+                                align-items: stretch;
+                                justify-content: space-between;
+
+                                .footer {
+                                    &-column {
+                                        width: calc(25% - 25px);
+                                        &:first-child {
+                                            width: calc(40% - 25px); //(25px=(40*2)/3)
+                                        }
+                                        &:nth-child(2) {
+                                            width: calc(35% - 25px);
+                                        }
+                                        .footer {
+                                            &-heading {
+                                                font-size: 1.4rem;
+                                                text-transform: uppercase;
+                                                font-weight: 500;
+                                                min-height: 4rem;
+                                                display:inline-block;
+                                                margin-bottom: 2rem;
+                                                &--logo {
+                                                    font-size: 4.6rem;
+                                                    font-family: $primary-font;
+                                                    font-weight: bold;
+                                                    color: $text-color;
+                                                    text-transform: none;
+                                                 
+                                                }
+                                            }
+                                            &-desc {
+                                                margin-bottom: 4.5rem;
+                                                margin-top: 2rem;
+                                            }
+                                            &-followers {
+                                                strong {
+                                                    font-size: 1.8rem;
+                                                    color: $title-color;
+                                                    font-weight: bold;
+                                                }
+                                                border-bottom: 1px solid #cccc;
+                                                padding-bottom: 2rem;
+                                                margin-bottom: 2rem;
+                                                font-weight: 500;
+                                            }
+                                            &-social {
+                                                display: flex;
+                                                align-items: center;
+                                                .text {
+                                                    font-size: 1.5rem;
+                                                }
+                                                &--icon {
+                                                    margin-left: 2rem;
+                                                    color: $third-color;
+                                                    font-size: 20px;
+                                                }
+                                                margin-bottom: 3.5rem;
+                                            }
+                                            &-form {
+                                                width: 100%;
+                                                max-width: 38rem;
+                                                display: flex;
+                                                align-items: stretch;
+                                                &-input {
+                                                    background-color: #fff;
+                                                    padding: 1.5rem;
+                                                    border: 1px solid #cccc;
+                                                    border-right: 0;
+                                                    font-family: $secondary-font;
+                                                    font-size: 1.5rem;
+                                                    font-style: italic;
+                                                    width:100%;
+                                                }
+                                                &-button {
+                                                    padding: 1.5rem 3.5rem;
+                                                    color: #fff;
+                                                    background-color: $third-color;
+                                                    font-weight: bold;
+                                                    outline: none;
+                                                    text-transform: uppercase;
+                                                    border: 0;
+                                                    flex-shrink: 0;
+                                                }
+                                            }
+                                            &-blog {
+                                                display: flex;
+                                                align-items: center;
+                                                color:#000;
+                                                margin-bottom: 3rem;
+                                                &-img {
+                                                    width: 12rem;
+                                                    height: 8rem;
+                                                    object-fit: cover;
+                                                }
+                                                &-info {
+                                                    padding-left: 2rem;
+                                                    .footer-blog-title {
+                                                        font-size: 1.2rem;
+                                                        text-transform: uppercase;
+                                                        font-weight: 500;
+                                                        margin-bottom: 1rem;
+                                                        line-height: 1.4;
+                                                    }
+                                                }
+                                            }
+                                            &-image-list {
+                                                display: flex;
+                                                align-items: stretch;
+                                                justify-content: flex-start;
+                                                flex-direction: row;
+                                                flex-wrap: wrap;
+                                                margin-left: -3px;
+                                                .footer-image-item {
+                                                    margin-left: 3px;
+                                                    width: calc(33.33% - 3px);
+                                                    margin-bottom: 3px;
+                                                    img{
+                                                        object-fit: cover;
+                                                        width:100%;
+                                                    }
+                                                }
+                                            }
+                                            &-view-more {
+                                                span.footer-text-more.text {
+                                                    display: block;
+                                                    margin-top: 2rem;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &-bottom {
+                                text-align: center;
+                                font-weight: 500;
+                                border-top:1px solid #cccc;
+                                padding-top:1rem;
+                                span {
+                                    color: #f38181;
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

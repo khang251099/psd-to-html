@@ -1,0 +1,32 @@
+@include maxWidth(375px){
+  
+   
+    .people-list{
+        display: block !important;
+    }
+    .people-container{
+        padding-bottom:1rem !important;
+    }
+}
+@include maxWidth(414px){
+  
+   
+    .people-list{
+        display: block !important;
+    }
+    .people-container{
+        padding-bottom:1rem !important;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .people-wrapper{
+        margin-top:2rem !important;
+    }
+    .people-item{
+        p.people-desc{
+            @include textOverflow(2);
+        }
+    }
+}

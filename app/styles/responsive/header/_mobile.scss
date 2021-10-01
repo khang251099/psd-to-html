@@ -1,0 +1,199 @@
+
+@include maxWidth(768px){
+  .header-wrapper {
+    min-height: unset;
+    .header-list {
+      .header-top {
+        .header-logo {
+          font-size: 5rem;
+        }
+        .header-toggle {
+          display: inline-block;
+          font-size: 2rem;
+          color: #fff;
+          align-self: center;
+        }
+        .header-menu-list.is-expand {
+          transform: translateX(0%);
+        }
+        .header-menu-list {
+          position: fixed;
+          right: 0;
+          top: 0;
+          bottom: 0; //chiếm full height;
+          transform: translateX(100%);
+          transition: all 0.25s ease-in;
+          background-color: rgb(218, 211, 211);
+          display: block; //cho mỗi phần tử chiếm full
+          line-height: 3rem;
+          padding: 2rem 2.5rem;
+          z-index: 999 !important;
+          width:500px;
+          .header-menu-item {
+            .header-menu-link {
+              color: $title-color !important;
+              font-weight: bold;
+              display: block;
+              padding: 1rem 2rem;
+              &:hover {
+                color: #fff !important;
+                background-color: $secondary-color;
+              }
+            }
+            .header-menu-icon {
+              color: $title-color !important;
+              padding: 1rem 2rem;
+              &:hover {
+                color: $primary-color !important;
+              }
+            }
+          }
+        }
+      }
+      .header-content {
+        padding-top: 5rem;
+        &-title {
+          font-size: 6.2rem;
+        }
+        .header-content-main {
+          .text-main{
+            font-size: 8rem;
+            margin-top: 5.5rem;
+          }
+          
+        }
+      }
+      .header-bottom {
+        margin-top: 6.5rem !important;
+        &-item{
+          width:144px;
+        }
+      }
+    }
+  }
+}
+
+@include maxWidth(375px){
+  .header {
+    &-wrapper {
+      min-height: unset;
+      .header-list {
+        .header-top {
+          .header-logo{
+            font-size:3rem;
+          }
+          .header-menu-list {
+           
+            width: 250px !important;
+        
+            line-height: 3rem;
+            padding: 1rem 1.5rem !important;
+            z-index: 99999 !important;
+            .header-menu-item {
+              .header-menu-link {
+                color: $title-color !important;
+                font-weight: bold;
+                display: block;
+                padding: 1rem 2rem;
+                &:hover {
+                  color: #fff !important;
+                  background-color: $secondary-color;
+                  //    border-radius:1rem;
+                }
+              }
+              .header-menu-icon {
+                color: $title-color !important;
+                padding: 1rem 2rem;
+              }
+            }
+          }
+        }
+        .header-content {
+          padding-top: 1rem;
+          &-title {
+            font-size: 3.2rem;
+          }
+          &-main {
+            .text-main{
+              font-size: 5rem !important;
+              margin-top: 3.5rem;
+              padding-bottom: 2rem;
+              margin-bottom: 2rem;
+              &:after {
+                width: 4rem;
+                height: 0.4rem;
+              }
+            }
+           
+          }
+          &-button {
+            .button-more {
+              padding: 5px 10px;
+            }
+          }
+        }
+        .header-bottom {
+          margin-top: 3.5rem !important;
+       
+          &-item {
+            text-align: center;
+      
+            
+            &:not(first-child) {
+              margin-left: 1rem;
+            }
+            &::before {
+              width: 2rem;
+            }
+            .header-bottom-number {
+              font-size: 2rem;
+            }
+
+            .header-bottom-text {
+              font-size: 1rem;
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@include maxWidth(414px){
+  .text-main{
+    font-size:6rem !important;
+    margin-top: 3.5rem !important;
+  }
+  .header-content-title{
+    font-size:4.2rem !important;
+  }
+  .header-bottom-item{
+    width:67px !important;
+    &::before{
+      width:3rem !important;
+    }
+    .header-bottom-number{
+      display:block;
+      text-align:center;
+    }
+    .header-bottom-text{
+      display:none;
+    }
+
+  }
+  .header-content-button{
+    .button-more{
+      padding: 5px 10px !important;
+    }
+  }
+
+  .header-menu-list {
+    width: 300px !important;
+    padding: 0.5rem 1rem !important;
+    z-index:99999 !important;
+  }
+
+
+}

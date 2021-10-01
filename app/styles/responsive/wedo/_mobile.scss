@@ -1,0 +1,52 @@
+@include maxWidth(375px){
+    .wedo-list{
+        padding:3rem 0 !important;
+
+    }
+    .wedo-container{
+        display:block !important;
+        & > *{
+            width:100% !important;
+        }
+    }
+}
+
+@include maxWidth(414px){
+    .block-header{
+        padding-bottom:0 !important;
+    }
+    .wedo-list{
+        padding:3rem 0 !important;
+
+    }
+    .wedo-container{
+        display:block !important;
+        & > *{
+            width:100% !important;
+        }
+    }
+}
+
+
+@include maxWidth(768px){
+    .wedo-list{
+        padding:3rem 0 !important;
+        .block-header{
+            
+            &-desc{
+                max-width:700px;
+                @include textOverflow(1);
+                margin-bottom: 3rem;
+            }
+        }
+    }
+   
+    .wedo-container{
+        display:block !important;
+        & > *{
+            width:100% !important;
+        }
+    }
+
+}
+
